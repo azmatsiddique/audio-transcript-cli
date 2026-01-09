@@ -10,7 +10,14 @@ It automatically chunks long audio files to avoid memory issues, making it perfe
 
 - **Automatic Chunking**: Splits large audio files into 30-second segments (customizable) to prevent OOM errors.
 - **GPU Acceleration**: Automatically utilizes CUDA or MPS (Apple Silicon) if available.
-- **Format Support**: Supports all audio formats compatiable with `ffmpeg` (MP3, WAV, M4A, FLAC, etc.) at 16kHz.
+- **Format Support**: Supports a wide range of audio formats via FFmpeg, including but not limited to:
+  - **MP3** (`.mp3`)
+  - **WAV** (`.wav`)
+  - **AAC/M4A** (`.m4a`, `.aac`)
+  - **FLAC** (`.flac`)
+  - **OGG** (`.ogg`)
+  - **WMA** (`.wma`)
+  - Any other format supported by `ffmpeg` installation.
 - **Easy CLI**: Simple command-line interface for quick usage.
 - **Python API**: Importable functions for integration into your own Python scripts.
 
