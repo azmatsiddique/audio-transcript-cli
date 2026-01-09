@@ -5,7 +5,7 @@ from .core import transcribe
 
 def main():
     parser = argparse.ArgumentParser(description="Transcribe audio files using OpenAI Whisper.")
-    parser.add_argument("input_file", help="Path to the input audio file (MP3, WAV, etc.)")
+    parser.add_argument("input_file", help="Path to the input audio file (MP3, WAV, M4A, etc.)")
     parser.add_argument("--model", default="openai/whisper-large-v2", help="Whisper model name (default: openai/whisper-large-v2)")
     parser.add_argument("--chunk-size", type=int, default=30000, help="Chunk length in milliseconds (default: 30000)")
     parser.add_argument("--device", help="Device to use (cuda, cpu, mps). Auto-detected if not provided.")

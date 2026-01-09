@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "audio-transcript-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple CLI tool to transcribe large audio files using OpenAI Whisper with chunking support."
 readme = "README.md"
 authors = [

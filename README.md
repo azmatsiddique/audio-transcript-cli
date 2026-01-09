@@ -52,6 +52,8 @@ transcribe-audio path/to/audio/meeting.mp3
 **Example:**
 ```bash
 transcribe-audio podcast.mp3 --model openai/whisper-medium -o podcast_transcript.txt
+# Supports M4A files too
+transcribe-audio voice_note.m4a --model openai/whisper-base
 ```
 
 ### Python API

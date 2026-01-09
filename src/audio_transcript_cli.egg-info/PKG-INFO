@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
 Name: audio-transcript-cli
-Version: 0.1.0
+Version: 0.1.1
 Summary: A simple CLI tool to transcribe large audio files using OpenAI Whisper with chunking support.
-Author-email: Azmat Siddique <azmat@example.com>
+Author-email: Azmat Siddique <azmat.siddique.98@gmail.com>
 Project-URL: Homepage, https://github.com/azmatsiddique/audio-transcript-cli
 Project-URL: Bug Tracker, https://github.com/azmatsiddique/audio-transcript-cli/issues
 Classifier: Programming Language :: Python :: 3
@@ -72,6 +72,8 @@ transcribe-audio path/to/audio/meeting.mp3
 **Example:**
 ```bash
 transcribe-audio podcast.mp3 --model openai/whisper-medium -o podcast_transcript.txt
+# Supports M4A files too
+transcribe-audio voice_note.m4a --model openai/whisper-base
 ```
 
 ### Python API
